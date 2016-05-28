@@ -22,7 +22,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family:"Avenir Next", Avenir, "Helvetica Neue", Helvetica, "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 'Lucida Grande', 'Luxi Sans', Arial, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -48,63 +48,73 @@ table {
     border-spacing: 0;
 }
 a{
-    color: #f06529;
+    color: #0078d7;
     text-decoration: none;
-}
-a:hover{
-    color:#e34c26;
 }
 img{
     vertical-align: bottom;
     background-color: #fff;
 }
 
-.header,.main{
-    padding: 10px 40px;
-    min-width: 980px;
+/* nav */
+nav{
+    height: 36px;
+    min-width: 680px;
 }
-/* header */
-.header{
-    margin-top:30px;
-    color: #f06529;
-}
-.header h1{
-    font-size: 100px;
-    font-weight: bold;
-}
-.header p{
-    font-size: 60px;
-    line-height: 1.4em;
-}
-.header p a{
-    font-weight: bold;
-}
-.header p:last-child{
-    border-bottom: 2px solid #bbb;
-}
-
-/* main */
-.main{
-    font-size: 22px;
-    color: #444;
-}
-.main .step{
-    line-height: 1.4em;
-}
-.main .step h2{
-    line-height: 2em;
-}
-.main .step p{
-    font-size: 0;
-    padding: 0 20px;
-}
-.main .step p a{
-    font-size: 20px;
-    width: 25%;
+nav a{
     display: inline-block;
+    padding: 20px 0;
+    margin:0 20px;
 }
-.main .step p a:nth-child(4):after{
-    white-space:pre;
-    content: "\A";
+nav a:hover{
+    color: #006cc2;
+    font-size: 18px;
 }
 
+/* container */
+.container,.left,.center,.right,.left img,.right img{
+    border: 1px solid #999;
+}
+.left,.center,.right{
+    background-color: #fff;
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    min-width: 680px;
+    background-color: #eee;
+}
+.left{
+    width: 200px;
+    position: relative;
+}
+.left img{
+    margin: 12px;
+}
+.left h1{
+    position: absolute;
+    font-weight: bold;
+    font-size: 17px;
+    right: 12px;
+    top: 12px;
+}
+.center{
+    padding: 10px 20px;
+}
+.center div{
+    padding: 10px 0;
+}
+.center h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.center p{
+    line-height: 1.5em;
+}
+.right{
+    width: 120px;
+    padding: 10px 0;
+}
+.right img{
+    margin: 10px 20px;
+}
